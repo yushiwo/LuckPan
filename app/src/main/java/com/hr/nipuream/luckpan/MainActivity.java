@@ -13,11 +13,9 @@ import com.hr.nipuream.luckpan.view.RotatePan;
 
 public class MainActivity extends AppCompatActivity implements RotatePan.AnimationEndListener{
 
-    private EnvironmentLayout layout;
     private RotatePan rotatePan;
     private LuckPanLayout luckPanLayout;
     private ImageView goBtn;
-    private ImageView yunIv;
 
     private String[] strs = {"华为手机","谢谢惠顾","iPhone 6s","mac book","魅族手机","小米手机"};
 
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements RotatePan.Animati
         rotatePan = (RotatePan) findViewById(R.id.rotatePan);
         rotatePan.setAnimationEndListener(this);
         goBtn = (ImageView)findViewById(R.id.go);
-        yunIv = (ImageView)findViewById(R.id.yun);
 
         luckPanLayout.post(new Runnable() {
             @Override
@@ -41,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements RotatePan.Animati
                 int backHeight = 0;
 
                 int MinValue = Math.min(width,height);
-                MinValue -= Util.dip2px(MainActivity.this,10)*2;
+//                MinValue -= Util.dip2px(MainActivity.this,10)*2;
                 backHeight = MinValue/2;
 
                 RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) luckPanLayout.getLayoutParams();

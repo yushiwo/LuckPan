@@ -10,7 +10,7 @@ import android.view.View;
 import com.hr.nipuream.luckpan.Util;
 
 /**
- * 描述：
+ * 描述：外层包含闪动的圆环
  * 作者：Nipuream
  * 时间: 2016-08-15 17:34
  * 邮箱：571829491@qq.com
